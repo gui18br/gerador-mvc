@@ -80,4 +80,4 @@ O gerador extrai regras específicas das seguintes ADRs do **Strong Nutrition**:
 *   `Venda` (ADR-05: Cadastro de Venda) — Valida cliente, produto, estoque e formato de data obrigatórios antes de persistir.
 *   `Caixa` (ADR-06: Cadastro de Caixa) — Valida tipos de movimentação (entrada/saída) e valores obrigatórios.
 
-> 💡 **Nota de Fallback**: Caso seja solicitado um módulo não mapeado nas ADRs (ex: `Usuario`), o gerador cria a estrutura MVC com campos e validações genéricas de ID e Nome.
+> ⚠️ **Bloqueio de Conformidade**: Caso seja solicitado um módulo não mapeado nas ADRs (ex: `Usuario`), a geração será **bloqueada** com uma mensagem de erro, garantindo que a estrutura só seja criada para módulos previamente documentados nas ADRs do projeto.
