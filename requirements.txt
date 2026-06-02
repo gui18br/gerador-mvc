@@ -1,0 +1,4 @@
+python-dotenv==1.2.2
+mcp==1.27.0
+mcp[server]
+mcp[cli]
